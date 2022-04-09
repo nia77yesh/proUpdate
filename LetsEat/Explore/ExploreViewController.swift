@@ -30,8 +30,8 @@ class ExploreViewController: UIViewController,
  @IBOutlet var CollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+let manager = ExploreDataManager()
+        manager.fetch()
     }
     @IBAction func unwindLoactionCancel(segue:UIStoryboardSegue){
         
